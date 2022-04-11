@@ -67,23 +67,23 @@ const automobili = [
     },
 ]
 
-const auto_a_benzina = automobili.filter( () => {
-    return automobili.alimentazione !== 'gpl' &&  automobili.alimentazione != 'Disel';
-    // return automobili.alimentazione === 'Benzina';
+const auto_a_benzina = automobili.filter((auto) => {
+    // return auto.alimentazione !== 'gpl' &&  automobili.alimentazione != 'Disel';
+    return auto.alimentazione === 'Benzina';
 }) 
 
 console.log(auto_a_benzina)
 
 
-const auto_a_disel = automobili.filter( () => {
-    return automobili.alimentazione === 'disel';
+const auto_a_disel = automobili.filter((auto) => {
+    return auto.alimentazione === 'Disel';
 }) 
 
 console.log(auto_a_disel);
 
 
-const auto_a_gpl = automobili.filter( () => {
-    return automobili.alimentazione === 'gpl';
+const auto_a_gpl = automobili.filter((auto) => {
+    return auto.alimentazione === 'gpl';
 }) 
 
 console.log(auto_a_gpl)
